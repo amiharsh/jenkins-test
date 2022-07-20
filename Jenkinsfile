@@ -7,6 +7,7 @@ pipeline {
                sh '''
                   set +x
                   bash test.sh
+                  zip -r -j *.log
                '''
             }
          }
