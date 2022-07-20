@@ -6,7 +6,7 @@ pipeline {
             script {
                sh '''
                   set +x
-                  bash test.sh
+                  bash saas-vaccum-analyze.sh
                   zip -r -j vacuum_result.zip *.log
                '''
             }
