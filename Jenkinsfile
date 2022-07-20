@@ -7,7 +7,7 @@ pipeline {
                sh '''
                   set +x
                   bash test.sh
-                  zip -r -j *.log
+                  zip -r -j vacuum_result.zip *.log
                '''
             }
          }
